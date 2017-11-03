@@ -1,0 +1,28 @@
+{
+    "name": "axess/php_formation",
+	"description": "projet ascii",
+	"type": "project",
+	"license": "article-2016",
+	"authors": [
+		{
+		"name" : "Laurent",
+		"email": "laurent.fonquerne@gmail.com"
+		}
+	],
+	"minimum-stability": "dev",
+	"require": { "doctrine/orm": "^2.5" },
+	"autoload": {
+	
+		"psr-4": {
+			"ASCII\\": "src/"
+		}
+	},
+	"require-dev": {
+		"phpunit/phpunit": "dev-master"
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"ASCII\\Test\\": "test/"
+		}
+	}
+}

@@ -1,0 +1,40 @@
+<?php
+
+
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Font
+ *
+ * @ORM\Table(name="font", uniqueConstraints={@ORM\UniqueConstraint(name="font_name", columns={"font_name"})})
+ * @ORM\Entity
+ */
+class Font
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="font_name", type="string", length=32, nullable=false)
+     */
+    private $fontName;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="font_line_height", type="integer", nullable=false)
+     */
+    private $fontLineHeight;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="font_id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $fontId;
+
+
+}
+

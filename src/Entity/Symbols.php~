@@ -1,0 +1,47 @@
+<?php
+
+
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Symbols
+ *
+ * @ORM\Table(name="symbols")
+ * @ORM\Entity
+ */
+class Symbols
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="symbols_name", type="string", length=32, nullable=false)
+     */
+    private $symbolsName;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="symbols_type", type="string", length=1, nullable=false)
+     */
+    private $symbolsType;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="symbols_value", type="string", length=1, nullable=false)
+     */
+    private $symbolsValue;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="symbols_id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $symbolsId;
+
+
+}
+
